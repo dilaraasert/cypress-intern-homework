@@ -43,15 +43,15 @@ Testleri çalıştırmak için iki farklı yöntem kullanabilirsiniz:
 ## Stajyer Mülakat Soruları ve Cevapları
 
 * 1. Page Object Model neden kullanılır?
-Test kodları ile sayfa elementlerini (selector) birbirinden ayırmak için kullanılır. Bu sayede arayüzde bir değişiklik olduğunda tüm testleri tek tek gezmek yerine sadece ilgili sayfa sınıfını (Page Object) güncelleyerek bakımı kolaylaştırırız. Kod tekrarını önler ve okunabilirliği artırır.
+Test kodları ile sayfa elementlerini birbirinden ayırmak için kullanılır. Bu sayede arayüzde bir değişiklik olduğunda tüm testleri tek tek gezmek yerine sadece ilgili sayfa sınıfını (Page Object) güncelleyerek bakımı kolaylaştırırız. Kod tekrarını önler ve okunabilirliği artırır.
 
 
 * 2. Fixture kullanmanın avantajı nedir?
-Kullanıcı adları, şifreler veya ürün bilgileri gibi test verilerini doğrudan test kodunun içine yazmak yerine (hardcode) harici `.json` dosyalarında tutmamızı sağlar. Bu sayede veri yönetimi merkezileşir, testler daha temiz görünür ve verileri farklı testlerde tekrar tekrar kullanmak çok kolaylaşır.
+Kullanıcı adları, şifreler veya ürün bilgileri gibi test verilerini doğrudan test kodunun içine yazmak yerine harici `.json` dosyalarında tutmamızı sağlar. Bu sayede veri yönetimi merkezileşir, testler daha temiz görünür ve verileri farklı testlerde tekrar tekrar kullanmak çok kolaylaşır.
 
 
 * 3. Neden cy.wait(5000) kullanmamalıyız?
-Sabit bekleme (hard wait) kullanmak test sürelerini gereksiz yere uzatır ve testleri kırılgan hale getirir. Öğe 1 saniyede yüklense bile test 5 saniye boşuna bekler. Bunun yerine Cypress'in akıllı bekleme özelliğine güvenmeli veya elementin görünür olmasını beklemeliyiz (assertion).
+Sabit bekleme (hard wait) kullanmak test sürelerini gereksiz yere uzatır ve testleri kolay bozulabilir hale getirir. Öğe 1 saniyede yüklense bile test 5 saniye boşuna bekler. Bunun yerine Cypress'in akıllı bekleme özelliğine güvenmeli veya elementin görünür olmasını beklemeliyiz (assertion).
 
 
 * 4. Testlerin birbirinden bağımsız olması neden önemlidir?
