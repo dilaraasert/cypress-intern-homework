@@ -14,8 +14,8 @@ Bu projenin amacı, SauceDemo uygulaması üzerinde Cypress kullanılarak UI tes
 
 ## Projenin Kurulumu
 Projeyi kendi bilgisayarınızda çalıştırmak için aşağıdaki adımları sırasıyla terminalinize girmeniz gerekmektedir:
-1. Depoyu klonlayın: `git clone <sizin-github-repo-linkiniz>`
-2. Proje dizinine gidin: `cd cypress-intern-homework`
+1. Depoyu klonlayın: `git clone [https://github.com/dilaraasert/cypress-intern-homework.git](https://github.com/dilaraasert/cypress-intern-homework.git)`
+2. Proje klasörüne gidin: `cd cypress-intern-homework`
 3. Gerekli paketleri kurun: `npm install`
 
 ## Testlerin Çalıştırılması
@@ -61,3 +61,4 @@ Testlerin çalışma sırası değiştiğinde veya tek başlarına koşturuldukl
 * 5. Bir selector seçerken nelere dikkat edilmelidir?
      Buton veya yazı kutusu gibi elementlerin rengi, tasarımı veya CSS sınıfları (class) ileride kolayca değişebilir. Eğer seçimi bunlara güvenerek yaparsak, ufak bir tasarım değişikliğinde testimiz hemen bozulur. Bu yüzden, tasarım değişikliklerinden etkilenmeyen, sadece test otomasyonu için özel olarak sayfaya eklenmiş olan `data-test` veya `data-cy` gibi benzersiz ve sabit etiketleri seçmeye dikkat edilmelidir.
 
+     
